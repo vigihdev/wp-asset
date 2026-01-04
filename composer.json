@@ -46,5 +46,9 @@
     },
     "config": {
         "process-timeout": 0
+    },
+    "scripts": {
+        "test": "phpunit",
+        "dev": "php -S localhost:2277 scripts/dev.php"
     }
 }

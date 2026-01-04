@@ -1,0 +1,14 @@
+# services.yaml
+parameters:
+  dist.basepath: "%env(STYLESHEETPATH)%/dist"
+  dist.uri: "%env(STYLESHEET_PATH_URI)%/dist"
+
+services:
+  jquery.asset:
+    public: true
+    class: 'Vigihdev\WpAsset\DTOs\JqueryAssetDto'
+    arguments:
+      $basepath: "%dist.basepath%/js"
+      $baseUrl: "%dist.uri%/js"
+      $version: "%env(ASSET_VERSION)%"
+      $js: "jquery.min.js"

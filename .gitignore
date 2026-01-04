@@ -9,7 +9,6 @@ package-lock.json
 package.json
 wp-bootstrap.php
 
-config/
 tests/
 node_modules/
 vendor/

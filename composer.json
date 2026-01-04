@@ -1,0 +1,50 @@
+{
+    "name": "vigihdev/wp-asset",
+    "version": "1.0.1",
+    "description": "Vigih Dev Wp Asset Package for WordPress Plugin Development with PHP 8.1+ and WordPress 6.4+",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/vigihdev/wp-asset",
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "vigihdev",
+        "asset"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Vigih Dev",
+            "email": "vigihdev@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.thrubus.id"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "symfony/filesystem": "^6.4"
+    },
+    "require-dev": {
+        "vigihdev/wp-kernel": "dev-main",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vigihdev\\WpAsset\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vigihdev\\WpAsset\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
